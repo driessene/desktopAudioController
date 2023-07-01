@@ -1,0 +1,13 @@
+settings:
+  port: COM3
+  baud_rate: 9600
+  update_delay: 50
+  num_of_pots: 5
+  change_percent: 0.02
+
+pots:
+  - id: 0
+    app: Spotify.exe
+    disp: Music
+    pin: 36
+    display_I2C_address: 70

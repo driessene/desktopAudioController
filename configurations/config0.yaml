@@ -1,0 +1,32 @@
+settings:
+  port: COM3
+  baud_rate: 9600
+  update_delay: 50
+  num_of_pots: 4
+  num_of_buttons: 3
+  change_percent: 0.1
+
+pots:
+  - app: Spotify.exe
+    disp: Music
+    pin: 36
+  - app: Discord.exe
+    disp: Chat
+    pin: 39
+  - app: RiotClientServices.exe, LeagueClientUxRender.exe
+    disp: Game
+    pin: 34
+  - app: chrome.exe
+    disp: Web
+    pin: 35
+
+buttons:
+  - pin: 27
+    threshold: 50
+    function: 'nexttrack'
+  - pin: 14
+    threshold: 50
+    function: 'playpause'
+  - pin: 12
+    threshold: 50
+    function: 'prevtrack'
